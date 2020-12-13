@@ -1,20 +1,20 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
-  before_action :set_locale
+  around_action :switch_locale
 
-  private
+  def switch_locale(&action)
+    locale = params[:locale] || I18n.default_locale
+    I18n.with_locale(locale, &action)
+  end
 
   def default_url_options
     { locale: I18n.locale }
   end
 
-  def set_locale
-    I18n.locale = extract_locale || I18n.default_locale
-  end
-
-  def extract_locale
-    parsed_locale = params[:locale]
-    I18n.available_locales.map(&:to_s).include?(parsed_locale) ? parsed_locale.to_sym : nil
+  def render404
+    respond_to do |format|
+      format.html { render file: Rails.root.join('public', '404.html'), status: :not_found }
+    end
   end
 end

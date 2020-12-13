@@ -1,42 +1,171 @@
 {
   "Minitest": {
     "coverage": {
-      "/Volumes/gitdisk/experiment/rails-ajackus/app/mailers/application_mailer.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Volumes/gitdisk/experiment/rails-ajackus/app/models/contact.rb": {
         "lines": [
           null,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
       },
       "/Volumes/gitdisk/experiment/rails-ajackus/app/models/application_record.rb": {
         "lines": [
           null,
           null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Volumes/gitdisk/experiment/rails-ajackus/app/controllers/contacts_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          3,
+          null,
+          3,
+          3,
+          2,
+          3,
+          3,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          1,
+          null,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null
+        ]
+      },
+      "/Volumes/gitdisk/experiment/rails-ajackus/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          12,
+          12,
+          null,
+          null,
+          1,
+          12,
+          null,
+          null,
+          1,
           0,
           0,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          null,
+          null
+        ]
+      },
+      "/Volumes/gitdisk/experiment/rails-ajackus/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Volumes/gitdisk/experiment/rails-ajackus/app/helpers/contacts_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Volumes/gitdisk/experiment/rails-ajackus/app/mailers/contact_mailer.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Volumes/gitdisk/experiment/rails-ajackus/app/mailers/application_mailer.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
       },
       "/Volumes/gitdisk/experiment/rails-ajackus/app/jobs/application_job.rb": {
         "lines": [
@@ -48,117 +177,6 @@
           null,
           null,
           null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Volumes/gitdisk/experiment/rails-ajackus/app/controllers/application_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Volumes/gitdisk/experiment/rails-ajackus/app/controllers/contacts_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Volumes/gitdisk/experiment/rails-ajackus/app/helpers/contacts_helper.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Volumes/gitdisk/experiment/rails-ajackus/app/helpers/application_helper.rb": {
-        "lines": [
-          null,
-          null,
-          0,
           0
         ],
         "branches": {
@@ -189,7 +207,7 @@
         }
       }
     },
-    "timestamp": 1607877358
+    "timestamp": 1607887477
   },
   "Unit Tests": {
     "coverage": {
