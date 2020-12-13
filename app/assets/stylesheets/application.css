@@ -15,3 +15,12 @@
  *= require Linearicons-Free-v1.0.0/icon-font.min.css
  *= require_self
  */
+
+.lang-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+.lang-wrapper span{
+  margin: 0 1em;
+}

@@ -1,0 +1,30 @@
+hi:
+  activerecord:
+    attributes:
+      contact:
+        first_name: मूल नाम
+        last_name: उपनाम
+        email: ईमेल
+        phone_number: फ़ोन नंबर
+        message: संदेश
+  global:
+    eg: उदाहरण
+  contacts:
+    index:
+      page_title: हमें एक संदेश भेजें
+      name: हमें अपना नाम बताऐं
+      email: अपना ईमेल दर्ज करें
+      phone_number: फ़ोन नंबर
+      message: संदेश
+      submit: मेसेज भेजें
+      address: पता
+      full_address: माडा सेंटर 8 वीं मंजिल, 379 हडसन सेंट, न्यूयॉर्क, एनवाई 10018 यूएस
+      lets_talk: वार्ता करें
+      contact_number: +1 800 1236879
+      support: सामान्य समर्थन
+      message_placeholder: हमें एक संदेश लिखें
+      field_warnings:
+        first_name: मूल नाम टाइप करें
+        last_name: उपनाम टाइप करें
+        email: "ईमेल आवश्यक है: ex@abc.xyz"
+        message: संदेश आवश्यक है

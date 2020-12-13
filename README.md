@@ -28,9 +28,9 @@ A simple contact form for your company for CTA before launching the product.
 
 ### Prerequisites
 
-Ruby: 2.6.5+ Recommended using rvm to install the Ruby version.
-Node: 12.x
-Yarn 1.x:
+- Ruby: 2.6.5+ Recommended using rvm to install the Ruby version.
+- Node: 12.x
+- Yarn 1.x:
 
 ### Setting up
 
@@ -46,7 +46,8 @@ It will install bundle dependencies, node modules and will do db setup.
 foreman start
 ```
 
-open http://localhost:5000/ to view the site.
+open http://localhost:5000/ or http://localhost:5000/en to view the english site.
+open http://localhost:5000/hi to view the hindi site.
 
 - http://localhost:5000/contact - contact page
 - http://localhost:5000/rails/mailers - preview email
