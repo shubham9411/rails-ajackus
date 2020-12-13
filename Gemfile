@@ -28,7 +28,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
 end
 
 group :development do
@@ -36,8 +39,17 @@ group :development do
   gem 'web-console', '>= 4.1.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
+  gem 'active_record_query_trace'
+  gem 'awesome_print', require: 'ap'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'bullet', group: :fancy
+  gem 'dotenv-rails'
+  gem 'foreman'
+  gem 'guard-minitest'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
+  gem 'pry-rails', group: :fancy
 end
 
 group :test do
