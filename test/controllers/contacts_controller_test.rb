@@ -62,7 +62,7 @@ class ContactsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should not update contact' do
-    patch contact_url(@contact), params: { contact: {first_name: ''} }
+    patch contact_url(@contact), params: { contact: { first_name: '' } }
     assert_response :success
   end
 
