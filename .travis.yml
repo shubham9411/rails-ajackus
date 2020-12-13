@@ -3,5 +3,5 @@ rvm:
   - "2.6.5"
 script:
   - RAILS_ENV=test bundle exec rake db:create db:migrate --trace
-  - bin/rubocop --parallel
+  - bundle exec rubocop --parallel
   - bin/rails test test/
