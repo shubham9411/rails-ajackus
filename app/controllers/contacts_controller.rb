@@ -30,8 +30,10 @@ class ContactsController < ApplicationController
       if @contact.save
         ContactMailer.contact_form_submission(@contact).deliver_later
         format.json { render :show, status: :created, location: @contact }
+        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
       else
         format.json { render json: @contact.errors, status: :unprocessable_entity }
+        format.html { render :new }
       end
     end
   end
