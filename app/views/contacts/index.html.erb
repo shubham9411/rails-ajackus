@@ -1,40 +1,40 @@
 <div class="container-contact100">
   <div class="wrap-contact100">
-    <form class="contact100-form validate-form">
-      <span class="contact100-form-title"> Send Us A Message </span>
+    <%= form_for @contact, html: { id: 'contact-form', class: 'contact100-form validate-form' } do |f|%>
+    <span class="contact100-form-title"> Send Us A Message </span>
 
-      <label class="label-input100" for="first-name">Tell us your name *</label>
-      <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-        <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name" />
-        <span class="focus-input100"></span>
-      </div>
-      <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-        <input class="input100" type="text" name="last-name" placeholder="Last name" />
-        <span class="focus-input100"></span>
-      </div>
+    <label class="label-input100" for="first_name">Tell us your name *</label>
+    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+      <%= f.text_field :first_name, class: 'input100', placeholder: 'First Name' %>
+      <span class="focus-input100"></span>
+    </div>
+    <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+      <%= f.text_field :last_name, class: 'input100', placeholder: 'Last Name' %>
+      <span class="focus-input100"></span>
+    </div>
 
-      <label class="label-input100" for="email">Enter your email *</label>
-      <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-        <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com" />
-        <span class="focus-input100"></span>
-      </div>
+    <label class="label-input100" for="email">Enter your email *</label>
+    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+      <%= f.text_field :email, class: 'input100', placeholder: 'Eg. example@email.com' %>
+      <span class="focus-input100"></span>
+    </div>
 
-      <label class="label-input100" for="phone">Enter phone number</label>
-      <div class="wrap-input100">
-        <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000" />
-        <span class="focus-input100"></span>
-      </div>
+    <label class="label-input100" for="phone_number">Enter phone number</label>
+    <div class="wrap-input100">
+      <%= f.text_field :phone_number, class: 'input100', placeholder: 'Eg. +1 800 000000' %>
+      <span class="focus-input100"></span>
+    </div>
 
-      <label class="label-input100" for="message">Message *</label>
-      <div class="wrap-input100 validate-input" data-validate="Message is required">
-        <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
-        <span class="focus-input100"></span>
-      </div>
+    <label class="label-input100" for="message">Message *</label>
+    <div class="wrap-input100 validate-input" data-validate="Message is required">
+      <%= f.text_area :message, class: 'input100', placeholder: 'Write us a message' %>
+      <span class="focus-input100"></span>
+    </div>
 
-      <div class="container-contact100-form-btn">
-        <button class="contact100-form-btn">Send Message</button>
-      </div>
-    </form>
+    <div class="container-contact100-form-btn">
+      <%= f.submit 'Send Message', class: 'contact100-form-btn' %>
+    </div>
+    <% end %>
 
     <div class="contact100-more flex-col-c-m" style="background-image: url('assets/bg-01.jpg')">
       <div class="flex-w size1 p-b-47">
@@ -78,6 +78,11 @@
   </div>
 </div>
 
-<div id="dropDownSelect1"></div>
+<div id="loader-wrapper" class=" loader-wrapper d-none">
+  <div class="loader">
+    <span></span>
+    <span></span>
+  </div>
+</div>
 
 <%= javascript_include_tag 'contact' %>

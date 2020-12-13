@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   def index
-    @contacts = Contact.all
+    @contact = Contact.new
   end
 
   # GET /contacts/1
@@ -28,11 +28,11 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
         format.json { render :show, status: :created, location: @contact }
+        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
       else
-        format.html { render :new }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
+        format.html { render :new }
       end
     end
   end
@@ -70,6 +70,6 @@ class ContactsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def contact_params
-    params.fetch(:contact, {})
+    params.fetch(:contact, {}).permit(:first_name, :last_name, :phone_number, :email, :message)
   end
 end

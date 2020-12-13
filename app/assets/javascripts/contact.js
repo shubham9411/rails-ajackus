@@ -5,7 +5,10 @@
     [ Validate ]*/
   var input = $(".validate-input .input100");
 
-  $(".validate-form").on("submit", function () {
+  $(".validate-form").on("submit", function (event) {
+    const loader = document.getElementById("loader-wrapper");
+    loader.classList.add("d-flex");
+    event.preventDefault(); 
     var check = true;
 
     for (var i = 0; i < input.length; i++) {
@@ -15,6 +18,27 @@
       }
     }
 
+    if(check) {
+      const formElement = document.getElementById("contact-form");
+      fetch(formElement.action, {
+        method: "post",
+        body: new FormData(formElement),
+      })
+        .then((resp) => resp.json())
+        .then(() => {
+          formElement.reset();
+          alert("Form Submitted succefully!");
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("Something went wrong!");
+        })
+        .finally(() => {
+          loader.classList.remove("d-flex");
+        });
+    } else {
+      loader.classList.remove('d-flex');
+    }
     return check;
   });
 

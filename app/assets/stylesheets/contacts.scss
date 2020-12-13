@@ -521,5 +521,52 @@ textarea.input100 {
   }
 }
 
+.loader-wrapper{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #00000026;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
 
+.loader {
+  width:150px;
+  height:150px;
+  display:inline-block;
+  padding:0px;
+  text-align:left;
+}
+.loader span {
+  position:absolute;
+  display:inline-block;
+  width:150px;
+  height:150px;
+  border-radius:100%;
+  background:#c80000;
+  -webkit-animation:loader 1.5s linear infinite;
+  animation:loader 1.5s linear infinite;
+}
+.loader span:last-child {
+  animation-delay:-0.9s;
+  -webkit-animation-delay:-0.9s;
+}
+@keyframes loader {
+  0% {transform: scale(0, 0);opacity:0.8;}
+  100% {transform: scale(1, 1);opacity:0;}
+}
+@-webkit-keyframes loader {
+  0% {-webkit-transform: scale(0, 0);opacity:0.8;}
+  100% {-webkit-transform: scale(1, 1);opacity:0;}
+}
 
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
