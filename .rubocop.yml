@@ -5,3 +5,5 @@ Style/Documentation:
   Enabled: false
 Rails/FilePath:
   EnforcedStyle: arguments
+Metrics/MethodLength:
+  Max: 15

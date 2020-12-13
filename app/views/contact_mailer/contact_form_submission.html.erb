@@ -1,0 +1,33 @@
+<div style="width: 80%;text-align: center;margin: auto;">
+  <h1>New Contact form submission</h1>
+  <table style="width: 100%;">
+    <thead>
+      <tr>
+        <td>Field</td>
+        <td>Value</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>First Name</td>
+        <td><%= @contact.first_name %></td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td><%= @contact.last_name %></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><%= @contact.email %></td>
+      </tr>
+      <tr>
+        <td>Phone Number</td>
+        <td><%= @contact.phone_number %></td>
+      </tr>
+      <tr>
+        <td>Message</td>
+        <td><%= @contact.message %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

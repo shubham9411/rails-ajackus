@@ -28,6 +28,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
+        ContactMailer.contact_form_submission(@contact).deliver_later
         format.json { render :show, status: :created, location: @contact }
         format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
       else
