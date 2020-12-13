@@ -9,35 +9,21 @@ class ContactsTest < ApplicationSystemTestCase
 
   test 'visiting the index' do
     visit contacts_url
-    assert_selector 'h1', text: 'Contacts'
+    assert_selector 'span', text: 'Send Us A Message'
+    assert_selector 'span', text: 'Address'
+    assert_selector 'span', text: 'Lets Talk'
+    assert_selector 'label', text: 'TELL US YOUR NAME'
+    assert_selector 'label', text: 'ENTER YOUR EMAIL'
+    assert_selector 'label', text: 'ENTER PHONE NUMBER'
+    assert_selector 'label', text: 'MESSAGE'
   end
 
   test 'creating a Contact' do
     visit contacts_url
-    click_on 'New Contact'
-
-    click_on 'Create Contact'
-
-    assert_text 'Contact was successfully created'
-    click_on 'Back'
-  end
-
-  test 'updating a Contact' do
-    visit contacts_url
-    click_on 'Edit', match: :first
-
-    click_on 'Update Contact'
-
-    assert_text 'Contact was successfully updated'
-    click_on 'Back'
-  end
-
-  test 'destroying a Contact' do
-    visit contacts_url
-    page.accept_confirm do
-      click_on 'Destroy', match: :first
-    end
-
-    assert_text 'Contact was successfully destroyed'
+    fill_in 'contact[first_name]', with: 'Mark'
+    fill_in 'contact[last_name]', with: 'Twain'
+    fill_in 'contact[email]', with: 'mark@example.com'
+    fill_in 'contact[message]', with: 'Honesty: The best of all the lost arts'
+    find('input[name="commit"]').click
   end
 end
