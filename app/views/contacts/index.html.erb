@@ -15,13 +15,13 @@
 
     <label class="label-input100" for="email"><%= t('.email') %> *</label>
     <div class="wrap-input100 validate-input" data-validate="<%= t('.field_warnings.email') %>">
-      <%= f.text_field :email, class: 'input100', placeholder: 'Eg. example@email.com' %>
+      <%= f.text_field :email, class: 'input100', placeholder: "#{t('global.eg')} example@email.com" %>
       <span class="focus-input100"></span>
     </div>
 
     <label class="label-input100" for="phone_number"><%= t('.phone_number') %></label>
     <div class="wrap-input100">
-      <%= f.text_field :phone_number, class: 'input100', placeholder: 'Eg. +1 800 000000' %>
+      <%= f.text_field :phone_number, class: 'input100', placeholder: "#{t('global.eg')} +1 800 000000" %>
       <span class="focus-input100"></span>
     </div>
 

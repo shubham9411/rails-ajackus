@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <div class="lang-wrapper">
+      <span><%= link_to 'English', root_path(locale: :en) %></span>
+      <span><%= link_to 'हिंदी ', root_path(locale: :hi) %></span>
+    </div>
     <%= yield %>
   </body>
 </html>

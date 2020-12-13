@@ -7,11 +7,14 @@ en:
         email: Email
         phone_number: Phone Number
         message: Message
+  global:
+    eg: Eg.
   contacts:
     index:
       page_title: Send Us A Message
       name: Tell us your name
       email: Enter your email
+      phone_number: Phone Number
       message: Message
       submit: Send Message
       address: Address
