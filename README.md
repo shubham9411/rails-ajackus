@@ -43,10 +43,10 @@ It will install bundle dependencies, node modules and will do db setup.
 ### Starting the server
 
 ```bash
-bin/rails s
+foreman start
 ```
 
-open http://localhost:3000/ to view the site.
+open http://localhost:5000/ to view the site.
 
-- http://localhost:3000/contact - contact page
-- http://localhost:3000/rails/mailers - preview email
+- http://localhost:5000/contact - contact page
+- http://localhost:5000/rails/mailers - preview email
